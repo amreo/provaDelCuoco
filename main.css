@@ -1,0 +1,82 @@
+html, body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+.kitchen{
+    position: relative;
+    width: 50%;
+    height: 70%;
+    display: inline-block;
+}
+.chef {
+    position: absolute;
+    top: 0;
+    left: 2em;
+    width: 50%;
+    height: 50%;
+    outline: 1px solid blue;
+}
+
+.recipes{
+    position: absolute;
+    top: 2em;
+    right: 2em;
+    width: 36%;
+    height: 44%;
+    outline: 1px solid red;
+}
+
+.pan{
+    position: absolute;
+    bottom: 0;
+    right: 2em;
+    left: 2em;
+    height: 44%;
+    border: 1px solid green;
+    border-radius: 50%;
+}
+.player-mark {
+    position: absolute;
+    top: 1em;
+    right: 1em;
+    width: 64px;
+    height: 64px;
+    background: gainsboro;
+    border: 1px solid silver;
+    border-radius: 50%;
+}
+.player-mark.current {
+    background: gold;
+    border-color: orange;
+}
+
+#ingredients {
+    border: 1px solid gray;
+    height: 20%;
+    margin: 0 10%;
+    text-align: center;
+}
+.ingredient {
+    width: 19%;
+    height: 100%;
+    display: inline-block;
+    background: silver;
+    margin: 0 2px;
+    cursor: pointer;
+}
+.ingredient::before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
+}
+.ingredient span {
+    display: inline-block;
+    vertical-align: middle;
+}
